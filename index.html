@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles/<?php echo $_SESSION["theme"]; ?>.css" id="theme-link"> бля подключение стилей разных тем -->
+    <link rel="icon" href="" type="image/x-icon">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__background">
+        <div class="header__logo"><img src="img/header/logo.png" alt="logo"></div>
+        <div class="header__burger"><img src="img/header/burger.svg" alt=""></div>
+        <nav class="header__nav">
+            <ul class="header__top-menu">
+                <li><a class="drop-menu" href="#">Дневники<i class="fa fa-angle-down"></i></a>
+                    <ul class="header__submenu">
+                        <li><a href="">Item 1</a></li>
+                        <li><a href="">Item 2</a></li>
+                    </ul>
+                </li>
+                <li><a class="drop-menu" href="#">Питания<i class="fa fa-angle-down"></i></a>
+                    <ul class="header__submenu">
+                        <li><a href="">Item 1</a></li>
+                        <li><a href="">Item 2</a></li>
+                    </ul>
+                </li>
+                <li><a class="drop-menu" href="#">Тренировки<i class="fa fa-angle-down"></i></a>
+                    <ul class="header__submenu">
+                        <li><a href="">Item 1</a></li>
+                        <li><a href="">Item 2</a></li>
+                    </ul>
+                </li>
+                <li><a class="drop-menu" href="#">Калькуляторы<i class="fa fa-angle-down"></i></a>
+                    <ul class="header__submenu">
+                        <li><a href="">Item 1</a></li>
+                        <li><a href="">Item 2</a></li>
+                    </ul>
+                </li>
+                <li><a class="drop-menu" href="#">Статьи<i class="fa fa-angle-down"></i></a>
+                    <ul class="header__submenu">
+                        <li><a href="">Item 1</a></li>
+                        <li><a href="">Item 2</a></li>
+                    </ul>
+                </li>
+                <li><a class="drop-menu" href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__acc-nav">
+            <ul class="header__acc-menu">
+                <li class="header__acc-icon icon-serch"><img src="img/header/serch.svg" alt=""></li>
+                <li class="header__acc-icon icon-zac"><img src="img/header/zac.svg" alt=""></li>
+                <li class="header__acc-icon icon-mail"><img src="img/header/mail.svg" alt=""></li>
+                <li class="header__acc-icon icon-colocol"><img src="img/header/colocol.svg" alt=""></li>
+                <li class="header__acc-icon icon-wallet"><img src="img/header/wallet.svg" alt="">
+                    <p class="drop-menu">2505 руб.</p>
+                </li>
+                <li class="header__acc-img"><img src="img/header/acc-img.png" alt="acc-img"></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+        <main>
+            <div class="wrap">
+                <h1 class="home-h1">Главная</h1>
+
+                <!-- Блок дневника -->
+                <div class="diary">
+                    <h3>Дневники</h3>
+
+                    <!-- Навигация по дневнику -->
+                    <div class="blok-nav">
+                        <ul>
+                            <li class="blok-nav__items active"><a href="#">Питание</a></li>
+                            <li class="blok-nav__items"><a href="#">Тренировки</a></li>
+                            <li class="blok-nav__items"><a href="#">Вес</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Статистика дневника -->
+                    <div class="diary__content">
+                        <div class="diary__info">
+
+                            <div class="diary__kkal">
+                                <h3 class="diary__kkal-h3">625 Ккал съедено</h3>
+                                <p class="bot">1875 Ккал осталось</p>
+                                <div class="diary__line">
+                                    <div></div>
+                                </div>
+                                <p><embed src="img/index/star.svg" alt="star">Цель: 2500 Ккал</p>
+                                <button class="diary__kkal-btn small-text-btn">Добавить прием пищи<span>+</span></button>
+                            </div>
+
+                            <div class="diary__water">
+                                <h3>0,25л воды выпито</h3>
+                                <p class="bot">1,75л осталось</p>
+                                <div class="diary__line woter-line">
+                                    <div></div>
+                                </div>
+                                <p><embed src="img/index/star.svg" alt="star">Цель: 2л</p>
+                                <button class="diary__water-btn small-text-btn">Добавить прием воды<span>+</span></button>
+                            </div>
+
+                        </div>
+
+                        <div class="diary__nav">
+                            <ul>
+                                <li>
+                                    <a href="" class="active">
+                                        <p class="icon-1 small-text-btn">Открыть дневник питания</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <p class="icon-2 small-text-btn">Статистика</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <p class="icon-3 small-text-btn">Целевые нормы</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <p class="icon-4 small-text-btn">План питания</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <p class="icon-5 small-text-btn">Мои блюда</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блок челлендж -->
+                <div class="challenge">
+                    <h3>Челлендж</h3>
+
+                    <!-- Навигация по челлендж -->
+                    <div class="blok-nav">
+                        <ul>
+                            <li class="blok-nav__items active"><a href="#">Искушения</a></li>
+                            <li class="blok-nav__items"><a href="#">Испытания</a></li>
+                        </ul>
+                    </div>
+                    <!-- Информация о челеджах -->
+                    <div class="challenge__content">
+                        <div class="challenge__info">
+                            <h4>Не употреблять фаст-фуд 14 дн.</h4>
+                            <div class="challenge__info-bot">
+                                <h5>Осталось:</h5>
+                                <h4>4дн 15ч 3 мин</h4>
+                            </div>
+                        </div>
+                        <a class="a-block button-text" href="#">Перейти к искушениям</a>
+                    </div>
+                </div>
+
+                <!-- Блок настроение -->
+                <div class="mood">
+                    <h3>Настроение</h3>
+                    <h4>Как прошел вчерашний день?
+                        <br>(12.01.2021)
+                    </h4>
+                    <div class="mood__content">
+                        <div class="mood__items">
+                            <img src="img/index/smail-1.png" alt="">
+                            <h5>Ужасно</h5>
+                        </div>
+                        <div class="mood__items">
+                            <img src="img/index/smail-2.png" alt="">
+                            <h5>Так себе</h5>
+                        </div>
+                        <div class="mood__items">
+                            <img src="img/index/smail-3.png" alt="">
+                            <h5>Нормально</h5>
+                        </div>
+                        <div class="mood__items active">
+                            <img src="img/index/smail-4.png" alt="">
+                            <h5>Неплохо</h5>
+                        </div>
+                        <div class="mood__items fool ">
+                            <img src="img/index/smail-5.png " alt=" ">
+                            <h5>Отлично</h5>
+                        </div>
+                        <textarea name="Короткая заметка " id=" " cols="30 " rows="10 "></textarea>
+                        <button class="small-text-btn ">Сохранить</button>
+                    </div>
+                    <a class="a-block small-text-btn" href="# ">Открыть дневник настроения</a>
+                </div>
+
+                <!-- Блок публикации -->
+                <div class="publication ">
+                    <h3>Опубликуйте что-нибудь в ленте</h3>
+                    <div class="publication__content ">
+                        <button class="publication__btn small-text-btn ">Опубликовать запись<span>+</span></button>
+                    </div>
+                </div>
+
+                <!-- Блок доступа -->
+                <div class="access ">
+                    <div class="access__content ">
+                        <h3>Действующий доступ!</h3>
+                        <h4>20дн 15ч 3 мин</h4>
+                        <button class="access__btn small-text-btn ">Продлить доступ</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="footer__des">
+        <p class="drop-menu">© Fitunit 2022</p>
+        <nav class="footer__des-nav">
+            <ul>
+                <li>Техподдержка</li>
+                <li>Premium</li>
+                <li>Публичная оферта</li>
+                <li>Конфиденциальность</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="footer__mob">
+        <nav class="footer__mob-nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <embed class="footer__icon-1" src="img/footer/home.svg" type="">
+                        <p class="small-text-btn">Главная</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <embed class="footer__icon-2" src="img/footer/lenta.svg" type="">
+                        <p class="small-text-btn">Лента</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <embed class="footer__icon-3" src="img/footer/profil.svg" type="">
+                        <p class="small-text-btn">Профиль</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <embed class="footer__icon-4" src="img/footer/dnevnik.svg" type="">
+                        <p class="small-text-btn">Дневники</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+    </div>
+    <script src="js/app.min.js "></script>
+</body>
+
+</html>
